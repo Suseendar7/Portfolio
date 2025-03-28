@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio - Suseendar Akash.L</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #84a6e9;
+        }
+
+        header {
+            background-color: #941919;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 10px auto;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Profile_suseendar.jpg" alt="Profile Picture" class="profile-picture">
+            <h1>Suseendar Akash.L</h1>
+            <p>BCA | Computer Programming | Quick Learner</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I am a <b>BCA student</b> specializing in <b>Computer Programming</b> at <b>DRBCCC Hindu College</b>.  
+               As a <b>quick learner</b>, I am passionate about coding, web development, and problem-solving.  
+               I am currently improving my <b>Java Programming</b> skills and exploring new technologies.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p><strong>BCA - Computer Programming</strong></p>
+            <p>DRBCCC Hindu College, India (Since Jan 2023)</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Quick Learner</li>
+                <li>Computer Programming</li>
+                <li>Technician skills</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="languages">
+        <div class="section-content">
+            <h2>Languages</h2>
+            <ul>
+                <li>English - fluent</li>
+                <li>Tamil - fluent</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="section-content">
+            <h2>Hobbies</h2>
+            <ul>
+              <li>Reading</li>
+              <li>Cooking</li>
+              <li>Travelling</li>
+              <li>Fitness</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="Suseendar_resume.pdf" target="_blank" class="download-button">Download CV</a>
+            </center>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> <a href="mailto:suseendar7@gmail.com">suseendar7@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 9551628290</p>
+            <p><strong>Address:</strong> No 9, 2nd Main Road, Gopalapuram, Pattabiram, 600072</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Suseendar Akash.L</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
